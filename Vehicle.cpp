@@ -5,25 +5,37 @@
 
 using namespace std;
 
-Vehicle::Vehicle(string Manufacturer, int YearBuilt) {
-	Manufacturer = manufacturer;
-	YearBuilt = yearBuilt;
+// Constructor
+Vehicle::Vehicle(string m, int y) {
+	manufacturer = m;
+	yearBuilt = y;
 }
+
+// Getter for manufacturer
 string Vehicle::getManufacturer() {
 	return manufacturer;
 }
-void Vehicle::setManufacturer(string Manufacturer) {
-	manufacturer = Manufacturer;
+
+// Setter for manufacturer
+void Vehicle::setManufacturer(string m) {
+	manufacturer = m;
 }
+
+// Getter for year
 int Vehicle::getYearBuilt() {
 	return yearBuilt;
 }
-void Vehicle::setYearBuilt(int YearBuilt) {
-	yearBuilt = YearBuilt;
+
+// Setter for year
+void Vehicle::setYearBuilt(int y) {
+	yearBuilt = y;
 }
+
+// Display manufacturer and year
 void Vehicle::displayInfo() {
-	cout << "Manufacturer: " << manufacturer;
-	cout << endl << "Year Built: " << yearBuilt << endl;
+	cout << "Vehicle Info:" << endl;
+	cout << "Manufacturer: " << getManufacturer();
+	cout << endl << "Year Built: " << getYearBuilt() << endl;
 }
 
 #endif

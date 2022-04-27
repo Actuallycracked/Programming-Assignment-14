@@ -1,4 +1,4 @@
-#pragma once
+
 #ifndef VEHICLE_H
 #define VEHICLE_H
 #include<iostream>
@@ -12,13 +12,22 @@ private:
 	int yearBuilt;
 
 public:
-	Vehicle(string manufacturer, int yearBuilt);
+	// Constructor
+	Vehicle(string m, int y);
 
+	// Getter for manufacturer
 	string getManufacturer();
+
+	// Setter for manufacturer
 	void setManufacturer(string manufacturer);
 
+	// Getter for year
 	int getYearBuilt();
+
+	// Setter for year
 	void setYearBuilt(int YearBuilt);
+
+	// Display class info
 	void displayInfo();
 };
 
